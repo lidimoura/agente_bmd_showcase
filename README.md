@@ -28,7 +28,7 @@ O projeto está organizado para acesso rápido e prático:
 * **[Visualizar a Apresentação Web Ao Vivo](https://SEU-LINK-MAGICO-AQUI)** — A página interativa com os detalhes do projeto e o guia de onboarding para a equipe.
 <br>
 
-* **[Testar o Agente BMD Diretamente](https://SEU-LINK-DE-TESTE-DO-AGENTE-AQUI)** — O link direto para interagir com o agente em tempo real.
+* **[Testar o Agente BMD Diretamente](https://lidimoura.github.io/agente-bmd/)** — O link direto para interagir com o agente em tempo real.
 <br>
 
 * **[Acessar o Código-Fonte do Agente](https://github.com/lidimoura/agente-bmd)** — O repositório com o código Python/Streamlit do agente.
