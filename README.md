@@ -12,16 +12,16 @@ Este repositório contém a página de apresentação e o pacote de habilitaçã
 
 ---
 
-### ✨ **Cliente**
+###  **Cliente**
 * **Empresa:** [Synk](https://github.com/SYNK-AI) 
 * **Projeto:** Agente BMD - Automação de Atendimento
 
-### 👩‍💻 **Desenvolvimento**
+###  **Desenvolvimento**
 * **Arquiteta de Soluções & Dev Full-Stack:** [Lidi Moura](https://www.linkedin.com/in/lidimoura/)
 
 ---
 
-## 🚀 Links Essenciais
+##  Links Essenciais
 
 O projeto está organizado para acesso rápido e prático:
 
