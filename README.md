@@ -25,7 +25,7 @@ Este repositório contém a página de apresentação e o pacote de habilitaçã
 
 O projeto está organizado para acesso rápido e prático:
 
-* **[Visualizar a Apresentação Web Ao Vivo](https://SEU-LINK-MAGICO-AQUI)** — A página interativa com os detalhes do projeto e o guia de onboarding para a equipe.
+* **[Visualizar a Apresentação Web Ao Vivo](https://lidimoura.github.io/agente_bmd_showcase/)** — A página interativa com os detalhes do projeto e o guia de onboarding para a equipe.
 <br>
 
 * **[Testar o Agente BMD Diretamente](https://lidimoura.github.io/agente-bmd/)** — O link direto para interagir com o agente em tempo real.
