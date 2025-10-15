@@ -20,6 +20,7 @@ body {
     color: var(--text-color);
     font-family: var(--font-body);
     line-height: 1.6;
+    overflow-x: hidden; /* Garante que não haja scroll horizontal */
 }
 
 /* --- Tipografia --- */
@@ -61,7 +62,7 @@ ul, ol { padding-left: 20px; }
 }
 
 main {
-    padding-top: 60px; /* Espaço para o header fixo */
+    padding-top: 60px;
 }
 
 .content-section {
@@ -140,23 +141,24 @@ footer {
 }
 
 .qa-card {
-    border-left: 5px solid #28a745; /* Verde para Aprovado */
+    border-left: 5px solid #28a745;
 }
 
 .qa-card-reprovado {
-    border-left: 5px solid #dc3545; /* Vermelho para Reprovado */
+    border-left: 5px solid #dc3545;
 }
 
-/* --- Estilos para Onboarding --- */
+/* --- Estilos para Onboarding (NOVA VERSÃO) --- */
 .onboarding-image {
-    width: 100%;
-    max-width: 500px;
+    display: block;
+    max-width: 100%; /* A imagem nunca será mais larga que o card */
+    height: auto; /* Mantém a proporção correta */
+    margin: 1.5rem auto 0; /* Centraliza a imagem horizontalmente */
     border-radius: 8px;
-    margin-top: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* --- Animações e Classes Utilitárias --- */
+/* --- Animações --- */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -166,4 +168,20 @@ footer {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* --- RESPONSIVIDADE PARA DISPOSITIVOS MÓVEIS --- */
+@media (max-width: 768px) {
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    .content-section { padding: 3rem 1rem; }
+    
+    .hero-buttons {
+        flex-direction: column; /* Empilha os botões verticalmente */
+        align-items: center;
+    }
+
+    .main-header nav a {
+        margin: 0 0.5rem;
+    }
 }
