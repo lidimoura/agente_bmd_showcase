@@ -1,0 +1,19 @@
+# Node.js
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Misc
+.DS_Store
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.sublime-workspace
+*.sublime-project
