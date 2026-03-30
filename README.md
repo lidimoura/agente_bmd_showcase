@@ -1,34 +1,34 @@
-# Apresentação do Projeto: Agente BMD para Synk
+# 🌊 Showcase: Agente Amazô | Encontro d'Água Hub
 
 ![Status](https://img.shields.io/badge/status-conclu%C3%ADdo-brightgreen?style=for-the-badge)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-</p>
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-Este repositório contém a página de apresentação e o pacote de habilitação do Agente BMD, uma solução de IA conversacional desenvolvida sob medida para a Synk.
+Este repositório contém o portfólio vivo da **Amazô**, a Inteligência Artificial e SDR do Encontro d'água hub. A página demonstra, na prática, o poder e as funcionalidades dos agentes de IA desenvolvidos para os nossos clientes.
 
 ---
 
-###  **Cliente**
-* **Empresa:** [Synk](https://github.com/SYNK-AI) 
-* **Projeto:** Agente BMD - Automação de Atendimento
+## Sobre o Projeto
 
-###  **Desenvolvimento**
-* **Arquiteta de Soluções & Dev Full-Stack:** [Lidi Moura](https://www.linkedin.com/in/lidimoura/)
+* **Empresa:** Encontro d'Água Hub
+* **Produto Demonstrado:** Criação de assistentes de IA e Concierge digital para pequenos negócios.
+* **Metodologia:** Processo de 4 Etapas (Diagnóstico > Implementação > QA > Entrega).
+
+## Desenvolvimento
+
+* **Arquiteta de soluções, dev full-stack & especialista em Data Science (ONE):** [Lídi Moura](https://www.linkedin.com/in/lidimoura/)
 
 ---
 
-##  Links Essenciais
+## Links Essenciais
 
-O projeto está organizado para acesso rápido e prático:
+* **[Acessar Catálogo de Serviços do Hub](https://hub.encontrodagua.com)**
+* **[Falar Diretamente com a Amazô (Em breve)](https://wa.me/5592900000000?text=Olá%20Amazô!%20Vim%20pelo%20Showcase.)**
 
-* **[Visualizar a Apresentação Web Ao Vivo](https://lidimoura.github.io/agente_bmd_showcase/)** — A página interativa com os detalhes do projeto e o guia de onboarding para a equipe.
-<br>
+---
 
-* **[Testar o Agente BMD Diretamente](https://lidimoura.github.io/agente-bmd/)** — O link direto para interagir com o agente em tempo real.
-<br>
+## Nota de Transparência & Heutagogia
 
-* **[Acessar o Código-Fonte do Agente](https://github.com/lidimoura/agente-bmd)** — O repositório com o código Python/Streamlit do agente.
+Este projeto foi idealizado, arquitetado e validado por mim, Lídi Moura, aplicando o conceito de "Vibe Coding" e pair programming com Inteligência Artificial. A IA foi utilizada como suporte para a refatoração e otimização do código, enquanto o direcionamento estratégico, as regras de negócio e a integração das ferramentas (n8n, Supabase, Vercel, React) permanecem sob minha gestão técnica e aprendizado contínuo na área de Data Science e Automação. Acreditamos na IA como aliada do desenvolvimento humano, não como substituta.

@@ -1,187 +1,87 @@
-/* --- Variáveis Globais e Reset --- */
+/* Paleta de Cores Tech Amazônico */
 :root {
-    --bg-color: #121212;
-    --card-color: #1E1E1E;
-    --accent-color: #6A5ACD;
-    --text-color: #F0F0F0;
+    --bg-dark: #0a0e27;           /* Fundo Rio Negro */
+    --card-bg: rgba(20, 30, 60, 0.6); /* Glassmorphism nos cards */
+    --card-border: rgba(200, 120, 255, 0.2); 
+    --acai-purple: #c878ff;       /* Roxo Açaí Neon */
+    --areia-gold: #f0b864;        /* Dourado Solimões Neon */
+    --text-primary: #f0f0f0;      /* Texto Branco/Cinza claro */
+    --text-secondary: #b0b0b0;    
+    --success: #28a745;
+    --error: #dc3545;
     --font-heading: 'Poppins', sans-serif;
     --font-body: 'Roboto', sans-serif;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+/* Reset básico para garantir que a página ocupe todo o espaço */
+* { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background: linear-gradient(135deg, #050609 0%, var(--bg-dark) 100%);
+    color: var(--text-primary);
     font-family: var(--font-body);
     line-height: 1.6;
-    overflow-x: hidden; /* Garante que não haja scroll horizontal */
 }
 
-/* --- Tipografia --- */
-h1, h2, h3, h4 {
-    font-family: var(--font-heading);
-    font-weight: 600;
-    color: var(--text-color);
-}
+/* Tipografia e Títulos */
+h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 600; margin-bottom: 1rem; }
+h1 { font-size: 2.5rem; color: var(--areia-gold); }
+h2 { font-size: 2rem; color: var(--acai-purple); text-align: center; margin-bottom: 2rem;}
+h3 { font-size: 1.3rem; color: var(--areia-gold); }
+h4 { font-size: 1.1rem; color: var(--acai-purple); }
+p, li { color: var(--text-secondary); margin-bottom: 1rem; }
 
-h1 { font-size: 3rem; margin-bottom: 1rem; }
-h2 { font-size: 2.2rem; margin-bottom: 2rem; text-align: center; }
-h3 { font-size: 1.5rem; margin-bottom: 1rem; }
-h4 { font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--accent-color); }
-p, li { font-size: 1rem; }
-a { color: var(--accent-color); text-decoration: none; }
-ul, ol { padding-left: 20px; }
-
-/* --- Estrutura e Layout --- */
+/* Menu Superior Fixado (Header) */
 .main-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(18, 18, 18, 0.8);
+    position: fixed; top: 0; width: 100%; background: rgba(10, 14, 39, 0.9);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    z-index: 1000;
-    padding: 1rem 0;
-    text-align: center;
+    border-bottom: 1px solid var(--card-border);
+    padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; z-index: 1000;
 }
+.logo { font-family: var(--font-heading); font-weight: 600; color: var(--areia-gold); font-size: 1.2rem; }
+nav a { color: var(--text-primary); text-decoration: none; margin-left: 1.5rem; transition: 0.3s; font-size: 0.9rem;}
+nav a:hover { color: var(--acai-purple); }
 
-.main-header nav a {
-    color: var(--text-color);
-    margin: 0 1rem;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
+/* Corpo da Página */
+main { padding-top: 80px; }
 
-.main-header nav a:hover {
-    color: var(--accent-color);
-}
+/* Seção Hero (A Primeira Tela) */
+.hero-section { min-height: 60vh; display: flex; align-items: center; justify-content: center; gap: 2rem; text-align: left; padding: 4rem 5%; flex-wrap: wrap;}
+.hero-content { max-width: 600px; }
+.hero-image img { width: 300px; height: 300px; object-fit: cover; border-radius: 50%; border: 3px solid var(--acai-purple); box-shadow: 0 0 20px rgba(200, 120, 255, 0.3);}
+.content-section { max-width: 1000px; margin: 0 auto; padding: 4rem 2rem; }
 
-main {
-    padding-top: 60px;
-}
+/* Botões do Hero */
+.hero-buttons { display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;}
+.cta-button { padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: 0.3s; }
+.cta-button.primary { background: var(--acai-purple); color: #fff; border: 1px solid var(--acai-purple); }
+.cta-button.primary:hover { background: transparent; color: var(--acai-purple); }
+.cta-button.secondary { background: transparent; color: var(--areia-gold); border: 1px solid var(--areia-gold); }
+.cta-button.secondary:hover { background: var(--areia-gold); color: #000; }
 
-.content-section {
-    padding: 4rem 2rem;
-    max-width: 1100px;
-    margin: 0 auto;
-}
+/* Estrutura dos Cards (Glassmorphism) */
+.card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; }
+.card-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;}
 
-footer {
-    text-align: center;
-    padding: 2rem;
-    margin-top: 2rem;
-    border-top: 1px solid var(--card-color);
-}
+/* Estilos de Status (Aprovado/Reprovado) */
+.qa-card { border-left: 4px solid var(--success); }
+.qa-card-reprovado { border-left: 4px solid var(--error); }
 
-/* --- Componentes --- */
-.card {
-    background-color: var(--card-color);
-    border-radius: 8px;
-    padding: 2rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    width: 100%;
-}
+/* Imagens do Onboarding */
+.onboarding-image { max-width: 100%; border-radius: 8px; margin-top: 1rem; border: 1px solid var(--card-border); opacity: 0.9;}
 
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-}
+/* Rodapé e Nota de Transparência */
+footer { text-align: center; padding: 2rem; border-top: 1px solid var(--card-border); font-size: 0.9rem; color: var(--text-secondary); background: rgba(10, 14, 39, 0.8);}
+.transparency-note { max-width: 800px; margin: 1.5rem auto 0; padding: 1rem; background: rgba(240, 184, 100, 0.1); border-left: 3px solid var(--areia-gold); border-radius: 4px; text-align: left; font-size: 0.85rem;}
+.transparency-note strong { color: var(--areia-gold); }
 
-.cta-button {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    border-radius: 50px;
-    font-family: var(--font-heading);
-    font-weight: 600;
-    text-decoration: none;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
+/* Efeito de Aparecer Suavemente (Fade In) */
+.fade-in { opacity: 0; transform: translateY(20px); transition: 0.6s ease-out; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
 
-.cta-button:hover {
-    transform: translateY(-3px);
-}
-
-.cta-button.primary {
-    background-color: var(--accent-color);
-    color: white;
-}
-
-.cta-button.secondary {
-    background-color: transparent;
-    border: 2px solid var(--accent-color);
-    color: var(--accent-color);
-}
-
-/* --- Seções Específicas --- */
-.hero-section {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 2rem;
-}
-
-.hero-content {
-    max-width: 800px;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.qa-card {
-    border-left: 5px solid #28a745;
-}
-
-.qa-card-reprovado {
-    border-left: 5px solid #dc3545;
-}
-
-/* --- Estilos para Onboarding (NOVA VERSÃO) --- */
-.onboarding-image {
-    display: block;
-    max-width: 100%; /* A imagem nunca será mais larga que o card */
-    height: auto; /* Mantém a proporção correta */
-    margin: 1.5rem auto 0; /* Centraliza a imagem horizontalmente */
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* --- Animações --- */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* --- RESPONSIVIDADE PARA DISPOSITIVOS MÓVEIS --- */
-@media (max-width: 768px) {
-    h1 { font-size: 2.2rem; }
-    h2 { font-size: 1.8rem; }
-    .content-section { padding: 3rem 1rem; }
-    
-    .hero-buttons {
-        flex-direction: column; /* Empilha os botões verticalmente */
-        align-items: center;
-    }
-
-    .main-header nav a {
-        margin: 0 0.5rem;
-    }
+/* Responsividade (Para Celulares) */
+@media (max-width: 768px) { 
+    nav { display: none; } 
+    .hero-section { flex-direction: column; text-align: center; }
 }
